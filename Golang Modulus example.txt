@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+    var number int
+    number = 0
+    
+    fmt.Print("Please enter a number: ")
+    fmt.Scanln(&number)
+    result := number%2==0
+    
+    if result == true {
+        fmt.Printf("%v is an even number", number)
+    } else {
+        fmt.Printf("%v is an odd number", number,)
+    }
+}
